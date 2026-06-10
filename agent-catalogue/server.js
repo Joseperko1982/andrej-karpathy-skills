@@ -4,7 +4,8 @@ const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
 const { homePage, productPage, productJsonLd, SITE_NAME } = require('./lib/render');
-const capi = require('./lib/capi');
+const { merchantFeedXml } = require('./lib/feeds');
+const track = require('./lib/track');
 
 const PORT = process.env.PORT || 3000;
 const BASE_URL = process.env.BASE_URL || `http://localhost:${PORT}`;
@@ -54,9 +55,10 @@ ${lines.join('\n')}
 ## API
 
 - [Full catalog feed](${BASE_URL}/api/catalog.json): all products as JSON
+- [Merchant feed](${BASE_URL}/feeds/google-merchant.xml): Google Merchant / TikTok Catalog / Snap Catalogs XML feed
 - [Agent manifest](${BASE_URL}/.well-known/agent-catalog.json): capabilities and endpoints
 - Reviews: GET/POST ${BASE_URL}/api/products/{id}/reviews
-- Conversion tracking relay (Meta CAPI): POST ${BASE_URL}/api/track
+- Conversion tracking relay (Meta CAPI, TikTok Events API, Snap CAPI): POST ${BASE_URL}/api/track
 `;
 }
 
@@ -66,14 +68,16 @@ function agentManifest() {
     description: 'Agent-first product catalogue with structured data and a read/write review API.',
     version: '1.0',
     catalog_feed: `${BASE_URL}/api/catalog.json`,
+    merchant_feed: `${BASE_URL}/feeds/google-merchant.xml`,
     llms_txt: `${BASE_URL}/llms.txt`,
     sitemap: `${BASE_URL}/sitemap.xml`,
     endpoints: [
       { method: 'GET', path: '/api/catalog.json', description: 'All products with offers and media' },
+      { method: 'GET', path: '/feeds/google-merchant.xml', description: 'Product feed for Google Merchant Center, TikTok Catalog, and Snap Catalogs' },
       { method: 'GET', path: '/api/products/{id}.json', description: 'Single product as schema.org JSON-LD' },
       { method: 'GET', path: '/api/products/{id}/reviews', description: 'Reviews for a product' },
       { method: 'POST', path: '/api/products/{id}/reviews', description: 'Submit a review: {author, authorType: "agent"|"human", rating: 1-5, body}' },
-      { method: 'POST', path: '/api/track', description: 'Relay a conversion event to Meta CAPI: {eventName, productId, email?}' }
+      { method: 'POST', path: '/api/track', description: 'Relay a conversion event to Meta CAPI, TikTok Events API, and Snap CAPI: {eventName: "ViewContent"|"AddToCart"|"Purchase", productId, email?}' }
     ]
   };
 }
@@ -98,6 +102,7 @@ const server = http.createServer(async (req, res) => {
       if (p === '/llms.txt') return send(res, 200, llmsTxt(), 'text/plain');
       if (p === '/robots.txt') return send(res, 200, robotsTxt, 'text/plain');
       if (p === '/sitemap.xml') return send(res, 200, sitemapXml(), 'application/xml');
+      if (p === '/feeds/google-merchant.xml') return send(res, 200, merchantFeedXml(products, BASE_URL, SITE_NAME), 'application/xml');
       if (p === '/.well-known/agent-catalog.json') return send(res, 200, agentManifest());
       if (p === '/style.css') return send(res, 200, fs.readFileSync(path.join(__dirname, 'public', 'style.css'), 'utf8'), 'text/css');
 
@@ -124,8 +129,8 @@ const server = http.createServer(async (req, res) => {
       if (m) {
         const prod = products.find(x => x.id === m[1]);
         if (!prod) return send(res, 404, '<h1>Not found</h1>', 'text/html');
-        // Server-side ViewContent event — CAPI works without any client JS.
-        capi.sendEvent('ViewContent', {
+        // Server-side ViewContent to all ad platforms — no client JS needed.
+        track.sendEvent('ViewContent', {
           product: prod,
           eventSourceUrl: BASE_URL + p,
           userData: { clientIp: req.socket.remoteAddress, userAgent: req.headers['user-agent'] }
@@ -164,12 +169,12 @@ const server = http.createServer(async (req, res) => {
         try { body = JSON.parse(await readBody(req)); } catch { return send(res, 400, { error: 'invalid JSON' }); }
         const prod = products.find(x => x.id === body.productId);
         if (!body.eventName || !prod) return send(res, 400, { error: 'required: eventName, valid productId' });
-        const result = await capi.sendEvent(body.eventName, {
+        const result = await track.sendEvent(body.eventName, {
           product: prod,
           eventSourceUrl: `${BASE_URL}/products/${prod.id}`,
           userData: { email: body.email, clientIp: req.socket.remoteAddress, userAgent: req.headers['user-agent'] }
         });
-        return send(res, 200, { ok: true, dryRun: result.dryRun, eventId: result.event.event_id });
+        return send(res, 200, { ok: true, eventId: result.eventId, platforms: result.platforms });
       }
     }
 

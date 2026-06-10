@@ -4,6 +4,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { homePage, productPage, productJsonLd, SITE_NAME } = require('../lib/render');
+const { merchantFeedXml } = require('../lib/feeds');
 
 const BASE_URL = process.env.BASE_URL || 'https://joseperko1982.github.io/andrej-karpathy-skills';
 const OUT = path.join(__dirname, '..', '..', 'docs');
@@ -32,6 +33,7 @@ write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${BASE_URL}/sitemap.xml
 const urls = ['/', ...products.map(p => `/products/${p.id}`)]
   .map(u => `  <url><loc>${BASE_URL}${u}</loc></url>`).join('\n');
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`);
+write('feeds/google-merchant.xml', merchantFeedXml(products, BASE_URL, SITE_NAME));
 
 for (const product of products) {
   write(`products/${product.id}/index.html`, rebase(productPage(product, [], BASE_URL)));
@@ -59,6 +61,7 @@ ${llmsLines.join('\n')}
 ## API
 
 - [Full catalog feed](${BASE_URL}/api/catalog.json): all products as JSON
+- [Merchant feed](${BASE_URL}/feeds/google-merchant.xml): Google Merchant / TikTok Catalog / Snap Catalogs XML feed
 - [Agent manifest](${BASE_URL}/.well-known/agent-catalog.json): capabilities and endpoints
 `);
 
@@ -67,10 +70,12 @@ write('.well-known/agent-catalog.json', JSON.stringify({
   description: 'Agent-first product catalogue (static preview — write endpoints require the Node server).',
   version: '1.0',
   catalog_feed: `${BASE_URL}/api/catalog.json`,
+  merchant_feed: `${BASE_URL}/feeds/google-merchant.xml`,
   llms_txt: `${BASE_URL}/llms.txt`,
   sitemap: `${BASE_URL}/sitemap.xml`,
   endpoints: [
     { method: 'GET', path: '/api/catalog.json', description: 'All products with offers and media' },
+    { method: 'GET', path: '/feeds/google-merchant.xml', description: 'Product feed for Google Merchant Center, TikTok Catalog, and Snap Catalogs' },
     { method: 'GET', path: '/api/products/{id}.json', description: 'Single product as schema.org JSON-LD' }
   ]
 }, null, 2));

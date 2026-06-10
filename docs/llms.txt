@@ -15,4 +15,5 @@
 ## API
 
 - [Full catalog feed](https://joseperko1982.github.io/andrej-karpathy-skills/api/catalog.json): all products as JSON
+- [Merchant feed](https://joseperko1982.github.io/andrej-karpathy-skills/feeds/google-merchant.xml): Google Merchant / TikTok Catalog / Snap Catalogs XML feed
 - [Agent manifest](https://joseperko1982.github.io/andrej-karpathy-skills/.well-known/agent-catalog.json): capabilities and endpoints

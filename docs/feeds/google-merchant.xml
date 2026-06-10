@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>Meta Product Catalogue</title>
+    <link>https://joseperko1982.github.io/andrej-karpathy-skills</link>
+    <description>Product feed for Google Merchant Center, TikTok Catalog, and Snap Catalogs.</description>
+    <item>
+      <g:id>NB-ADL-001</g:id>
+      <g:title>Aurora Smart Desk Lamp</g:title>
+      <g:description>Adaptive-color LED desk lamp with circadian presets, USB-C charging, and a matte aluminium body.</g:description>
+      <g:link>https://joseperko1982.github.io/andrej-karpathy-skills/products/aurora-desk-lamp</g:link>
+      <g:image_link>https://placehold.co/1024x1024?text=Aurora%20Smart%20Desk%20Lamp</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:price>89.00 USD</g:price>
+      <g:brand>Northbeam</g:brand>
+      <g:gtin>0123456789012</g:gtin>
+      <g:condition>new</g:condition>
+      <g:product_type>Home &amp; Office &gt; Lighting</g:product_type>
+    </item>
+    <item>
+      <g:id>FW-TLP-28</g:id>
+      <g:title>Trailline 28L Daypack</g:title>
+      <g:description>Weatherproof 28-litre hiking daypack with ventilated back panel and recycled ripstop shell.</g:description>
+      <g:link>https://joseperko1982.github.io/andrej-karpathy-skills/products/trailline-pack-28</g:link>
+      <g:image_link>https://placehold.co/1024x1024?text=Trailline%2028L%20Daypack</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:price>129.00 USD</g:price>
+      <g:brand>Fernweh</g:brand>
+      <g:gtin>0123456789029</g:gtin>
+      <g:condition>new</g:condition>
+      <g:product_type>Outdoor &gt; Backpacks</g:product_type>
+    </item>
+    <item>
+      <g:id>KF-VCG-048</g:id>
+      <g:title>Verve Conical Burr Grinder</g:title>
+      <g:description>48mm conical burr espresso grinder with 60 stepless settings and single-dose hopper.</g:description>
+      <g:link>https://joseperko1982.github.io/andrej-karpathy-skills/products/verve-espresso-grinder</g:link>
+      <g:image_link>https://placehold.co/1024x1024?text=Verve%20Conical%20Burr%20Grinder</g:image_link>
+      <g:availability>preorder</g:availability>
+      <g:price>249.00 USD</g:price>
+      <g:brand>Kaffeform</g:brand>
+      <g:gtin>0123456789036</g:gtin>
+      <g:condition>new</g:condition>
+      <g:product_type>Kitchen &gt; Coffee</g:product_type>
+    </item>
+    <item>
+      <g:id>FW-DMH-M</g:id>
+      <g:title>Drift Merino Hoodie</g:title>
+      <g:description>Midweight 100% merino wool hoodie, naturally odor-resistant, made for travel and trail.</g:description>
+      <g:link>https://joseperko1982.github.io/andrej-karpathy-skills/products/drift-merino-hoodie</g:link>
+      <g:image_link>https://placehold.co/1024x1024?text=Drift%20Merino%20Hoodie</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:price>159.00 USD</g:price>
+      <g:brand>Fernweh</g:brand>
+      <g:gtin>0123456789043</g:gtin>
+      <g:condition>new</g:condition>
+      <g:product_type>Apparel &gt; Hoodies</g:product_type>
+    </item>
+    <item>
+      <g:id>NB-HMK-75</g:id>
+      <g:title>Habit 75% Mechanical Keyboard</g:title>
+      <g:description>Gasket-mounted 75% keyboard with hot-swappable switches, rotary knob, and tri-mode connectivity.</g:description>
+      <g:link>https://joseperko1982.github.io/andrej-karpathy-skills/products/habit-mechanical-keyboard</g:link>
+      <g:image_link>https://placehold.co/1024x1024?text=Habit%2075%25%20Mechanical%20Keyboard</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:price>139.00 USD</g:price>
+      <g:brand>Northbeam</g:brand>
+      <g:gtin>0123456789050</g:gtin>
+      <g:condition>new</g:condition>
+      <g:product_type>Electronics &gt; Keyboards</g:product_type>
+    </item>
+    <item>
+      <g:id>TP-SYM-45</g:id>
+      <g:title>Solstice Cork Yoga Mat</g:title>
+      <g:description>Natural cork yoga mat over a rubber base — grippy when wet, 4.5mm cushioning, plastic-free.</g:description>
+      <g:link>https://joseperko1982.github.io/andrej-karpathy-skills/products/solstice-yoga-mat</g:link>
+      <g:image_link>https://placehold.co/1024x1024?text=Solstice%20Cork%20Yoga%20Mat</g:image_link>
+      <g:availability>out of stock</g:availability>
+      <g:price>79.00 USD</g:price>
+      <g:brand>Terra Practice</g:brand>
+      <g:gtin>0123456789067</g:gtin>
+      <g:condition>new</g:condition>
+      <g:product_type>Sports &gt; Yoga</g:product_type>
+    </item>
+  </channel>
+</rss>

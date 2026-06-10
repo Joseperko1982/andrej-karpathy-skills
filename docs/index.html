@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Home — Meta Product Catalogue</title>
-<meta name="description" content="Agent-first product catalogue with structured data, JSON feeds, and Meta CAPI.">
+<meta name="description" content="Agent-first product catalogue with structured data, unified ad-platform feeds, and server-side conversion tracking.">
 <link rel="canonical" href="https://joseperko1982.github.io/andrej-karpathy-skills/">
 <link rel="stylesheet" href="https://joseperko1982.github.io/andrej-karpathy-skills/style.css">
 <meta property="og:site_name" content="Meta Product Catalogue">
 <meta property="og:title" content="Home">
-<meta property="og:description" content="Agent-first product catalogue with structured data, JSON feeds, and Meta CAPI.">
+<meta property="og:description" content="Agent-first product catalogue with structured data, unified ad-platform feeds, and server-side conversion tracking.">
 <meta property="og:url" content="https://joseperko1982.github.io/andrej-karpathy-skills/">
 <meta property="og:type" content="website">
 
@@ -17,58 +17,101 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Meta Product Catalogue","itemListElement":[{"@type":"ListItem","position":1,"url":"https://joseperko1982.github.io/andrej-karpathy-skills/products/aurora-desk-lamp"},{"@type":"ListItem","position":2,"url":"https://joseperko1982.github.io/andrej-karpathy-skills/products/trailline-pack-28"},{"@type":"ListItem","position":3,"url":"https://joseperko1982.github.io/andrej-karpathy-skills/products/verve-espresso-grinder"},{"@type":"ListItem","position":4,"url":"https://joseperko1982.github.io/andrej-karpathy-skills/products/drift-merino-hoodie"},{"@type":"ListItem","position":5,"url":"https://joseperko1982.github.io/andrej-karpathy-skills/products/habit-mechanical-keyboard"},{"@type":"ListItem","position":6,"url":"https://joseperko1982.github.io/andrej-karpathy-skills/products/solstice-yoga-mat"}]}</script>
 </head>
 <body>
-<header><a href="https://joseperko1982.github.io/andrej-karpathy-skills/">Meta Product Catalogue</a><nav><a href="https://joseperko1982.github.io/andrej-karpathy-skills/api/catalog.json">JSON feed</a> <a href="https://joseperko1982.github.io/andrej-karpathy-skills/llms.txt">llms.txt</a></nav></header>
-<main><h1>Meta Product Catalogue</h1>
-<p>A product catalogue built agent-first. Discovery surfaces: <a href="https://joseperko1982.github.io/andrej-karpathy-skills/llms.txt">/llms.txt</a>, <a href="https://joseperko1982.github.io/andrej-karpathy-skills/api/catalog.json">/api/catalog.json</a>, <a href="https://joseperko1982.github.io/andrej-karpathy-skills/sitemap.xml">/sitemap.xml</a>, <a href="https://joseperko1982.github.io/andrej-karpathy-skills/.well-known/agent-catalog.json">/.well-known/agent-catalog.json</a>.</p>
+<header class="site-header">
+  <a class="brand" href="https://joseperko1982.github.io/andrej-karpathy-skills/">Meta Product Catalogue</a>
+  <nav>
+    <a href="https://joseperko1982.github.io/andrej-karpathy-skills/api/catalog.json">JSON feed</a>
+    <a href="https://joseperko1982.github.io/andrej-karpathy-skills/feeds/google-merchant.xml">Merchant feed</a>
+    <a href="https://joseperko1982.github.io/andrej-karpathy-skills/llms.txt">llms.txt</a>
+  </nav>
+</header>
+<main>
+<section class="hero">
+  <h1>Commerce, built for agents.</h1>
+  <p>A product catalogue that AI agents and ad platforms read natively — structured data on every page, one feed for every channel, server-side conversion events out of the box.</p>
+  <p class="integrations">
+    <span class="chip">Google Merchant</span>
+    <span class="chip">Meta CAPI</span>
+    <span class="chip">TikTok Events</span>
+    <span class="chip">Snap CAPI</span>
+    <span class="chip">schema.org</span>
+    <span class="chip">llms.txt</span>
+  </p>
+</section>
 <ul class="grid">
 <li class="card">
   <a href="https://joseperko1982.github.io/andrej-karpathy-skills/products/aurora-desk-lamp">
-    <img src="https://placehold.co/1024x1024?text=Aurora%20Smart%20Desk%20Lamp" alt="Aurora Smart Desk Lamp" width="240">
-    <h2>Aurora Smart Desk Lamp</h2>
+    <div class="card-media"><img src="https://placehold.co/1024x1024?text=Aurora%20Smart%20Desk%20Lamp" alt="Aurora Smart Desk Lamp" loading="lazy"></div>
+    <div class="card-body">
+      <p class="eyebrow">Northbeam</p>
+      <h2>Aurora Smart Desk Lamp</h2>
+      <p class="card-description">Adaptive-color LED desk lamp with circadian presets, USB-C charging, and a matte aluminium body.</p>
+      <p class="price">USD 89.00 <span class="badge badge-instock">In stock</span></p>
+    </div>
   </a>
-  <p>Adaptive-color LED desk lamp with circadian presets, USB-C charging, and a matte aluminium body.</p>
-  <p class="price">USD 89.00</p>
 </li>
 <li class="card">
   <a href="https://joseperko1982.github.io/andrej-karpathy-skills/products/trailline-pack-28">
-    <img src="https://placehold.co/1024x1024?text=Trailline%2028L%20Daypack" alt="Trailline 28L Daypack" width="240">
-    <h2>Trailline 28L Daypack</h2>
+    <div class="card-media"><img src="https://placehold.co/1024x1024?text=Trailline%2028L%20Daypack" alt="Trailline 28L Daypack" loading="lazy"></div>
+    <div class="card-body">
+      <p class="eyebrow">Fernweh</p>
+      <h2>Trailline 28L Daypack</h2>
+      <p class="card-description">Weatherproof 28-litre hiking daypack with ventilated back panel and recycled ripstop shell.</p>
+      <p class="price">USD 129.00 <span class="badge badge-instock">In stock</span></p>
+    </div>
   </a>
-  <p>Weatherproof 28-litre hiking daypack with ventilated back panel and recycled ripstop shell.</p>
-  <p class="price">USD 129.00</p>
 </li>
 <li class="card">
   <a href="https://joseperko1982.github.io/andrej-karpathy-skills/products/verve-espresso-grinder">
-    <img src="https://placehold.co/1024x1024?text=Verve%20Conical%20Burr%20Grinder" alt="Verve Conical Burr Grinder" width="240">
-    <h2>Verve Conical Burr Grinder</h2>
+    <div class="card-media"><img src="https://placehold.co/1024x1024?text=Verve%20Conical%20Burr%20Grinder" alt="Verve Conical Burr Grinder" loading="lazy"></div>
+    <div class="card-body">
+      <p class="eyebrow">Kaffeform</p>
+      <h2>Verve Conical Burr Grinder</h2>
+      <p class="card-description">48mm conical burr espresso grinder with 60 stepless settings and single-dose hopper.</p>
+      <p class="price">USD 249.00 <span class="badge badge-preorder">Pre-order</span></p>
+    </div>
   </a>
-  <p>48mm conical burr espresso grinder with 60 stepless settings and single-dose hopper.</p>
-  <p class="price">USD 249.00</p>
 </li>
 <li class="card">
   <a href="https://joseperko1982.github.io/andrej-karpathy-skills/products/drift-merino-hoodie">
-    <img src="https://placehold.co/1024x1024?text=Drift%20Merino%20Hoodie" alt="Drift Merino Hoodie" width="240">
-    <h2>Drift Merino Hoodie</h2>
+    <div class="card-media"><img src="https://placehold.co/1024x1024?text=Drift%20Merino%20Hoodie" alt="Drift Merino Hoodie" loading="lazy"></div>
+    <div class="card-body">
+      <p class="eyebrow">Fernweh</p>
+      <h2>Drift Merino Hoodie</h2>
+      <p class="card-description">Midweight 100% merino wool hoodie, naturally odor-resistant, made for travel and trail.</p>
+      <p class="price">USD 159.00 <span class="badge badge-instock">In stock</span></p>
+    </div>
   </a>
-  <p>Midweight 100% merino wool hoodie, naturally odor-resistant, made for travel and trail.</p>
-  <p class="price">USD 159.00</p>
 </li>
 <li class="card">
   <a href="https://joseperko1982.github.io/andrej-karpathy-skills/products/habit-mechanical-keyboard">
-    <img src="https://placehold.co/1024x1024?text=Habit%2075%25%20Mechanical%20Keyboard" alt="Habit 75% Mechanical Keyboard" width="240">
-    <h2>Habit 75% Mechanical Keyboard</h2>
+    <div class="card-media"><img src="https://placehold.co/1024x1024?text=Habit%2075%25%20Mechanical%20Keyboard" alt="Habit 75% Mechanical Keyboard" loading="lazy"></div>
+    <div class="card-body">
+      <p class="eyebrow">Northbeam</p>
+      <h2>Habit 75% Mechanical Keyboard</h2>
+      <p class="card-description">Gasket-mounted 75% keyboard with hot-swappable switches, rotary knob, and tri-mode connectivity.</p>
+      <p class="price">USD 139.00 <span class="badge badge-instock">In stock</span></p>
+    </div>
   </a>
-  <p>Gasket-mounted 75% keyboard with hot-swappable switches, rotary knob, and tri-mode connectivity.</p>
-  <p class="price">USD 139.00</p>
 </li>
 <li class="card">
   <a href="https://joseperko1982.github.io/andrej-karpathy-skills/products/solstice-yoga-mat">
-    <img src="https://placehold.co/1024x1024?text=Solstice%20Cork%20Yoga%20Mat" alt="Solstice Cork Yoga Mat" width="240">
-    <h2>Solstice Cork Yoga Mat</h2>
+    <div class="card-media"><img src="https://placehold.co/1024x1024?text=Solstice%20Cork%20Yoga%20Mat" alt="Solstice Cork Yoga Mat" loading="lazy"></div>
+    <div class="card-body">
+      <p class="eyebrow">Terra Practice</p>
+      <h2>Solstice Cork Yoga Mat</h2>
+      <p class="card-description">Natural cork yoga mat over a rubber base — grippy when wet, 4.5mm cushioning, plastic-free.</p>
+      <p class="price">USD 79.00 <span class="badge badge-outofstock">Out of stock</span></p>
+    </div>
   </a>
-  <p>Natural cork yoga mat over a rubber base — grippy when wet, 4.5mm cushioning, plastic-free.</p>
-  <p class="price">USD 79.00</p>
 </li></ul></main>
-<footer>Built agent-first: every page ships JSON-LD, every resource has a JSON twin.</footer>
+<footer class="site-footer">
+  <p><strong>Agent-first commerce.</strong> Every page ships JSON-LD; every resource has a JSON twin.</p>
+  <p class="footer-links">
+    <a href="https://joseperko1982.github.io/andrej-karpathy-skills/sitemap.xml">sitemap</a> ·
+    <a href="https://joseperko1982.github.io/andrej-karpathy-skills/.well-known/agent-catalog.json">agent manifest</a> ·
+    <a href="https://joseperko1982.github.io/andrej-karpathy-skills/feeds/google-merchant.xml">product feed</a>
+  </p>
+</footer>
 </body>
 </html>
