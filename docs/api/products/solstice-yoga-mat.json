@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://joseperko1982.github.io/andrej-karpathy-skills/products/solstice-yoga-mat",
+  "name": "Solstice Cork Yoga Mat",
+  "description": "Natural cork yoga mat over a rubber base — grippy when wet, 4.5mm cushioning, plastic-free.",
+  "sku": "TP-SYM-45",
+  "gtin13": "0123456789067",
+  "brand": {
+    "@type": "Brand",
+    "name": "Terra Practice"
+  },
+  "image": "https://joseperko1982.github.io/andrej-karpathy-skillshttps://placehold.co/1024x1024?text=Solstice%20Cork%20Yoga%20Mat",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://joseperko1982.github.io/andrej-karpathy-skills/products/solstice-yoga-mat",
+    "price": "79.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/OutOfStock"
+  }
+}

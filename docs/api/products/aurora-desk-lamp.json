@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://joseperko1982.github.io/andrej-karpathy-skills/products/aurora-desk-lamp",
+  "name": "Aurora Smart Desk Lamp",
+  "description": "Adaptive-color LED desk lamp with circadian presets, USB-C charging, and a matte aluminium body.",
+  "sku": "NB-ADL-001",
+  "gtin13": "0123456789012",
+  "brand": {
+    "@type": "Brand",
+    "name": "Northbeam"
+  },
+  "image": "https://joseperko1982.github.io/andrej-karpathy-skillshttps://placehold.co/1024x1024?text=Aurora%20Smart%20Desk%20Lamp",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://joseperko1982.github.io/andrej-karpathy-skills/products/aurora-desk-lamp",
+    "price": "89.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  }
+}

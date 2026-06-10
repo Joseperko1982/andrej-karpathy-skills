@@ -1,0 +1,20 @@
+{
+  "name": "Meta Product Catalogue",
+  "description": "Agent-first product catalogue (static preview — write endpoints require the Node server).",
+  "version": "1.0",
+  "catalog_feed": "https://joseperko1982.github.io/andrej-karpathy-skills/api/catalog.json",
+  "llms_txt": "https://joseperko1982.github.io/andrej-karpathy-skills/llms.txt",
+  "sitemap": "https://joseperko1982.github.io/andrej-karpathy-skills/sitemap.xml",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/catalog.json",
+      "description": "All products with offers and media"
+    },
+    {
+      "method": "GET",
+      "path": "/api/products/{id}.json",
+      "description": "Single product as schema.org JSON-LD"
+    }
+  ]
+}

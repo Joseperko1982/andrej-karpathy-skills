@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://joseperko1982.github.io/andrej-karpathy-skills/products/habit-mechanical-keyboard",
+  "name": "Habit 75% Mechanical Keyboard",
+  "description": "Gasket-mounted 75% keyboard with hot-swappable switches, rotary knob, and tri-mode connectivity.",
+  "sku": "NB-HMK-75",
+  "gtin13": "0123456789050",
+  "brand": {
+    "@type": "Brand",
+    "name": "Northbeam"
+  },
+  "image": "https://joseperko1982.github.io/andrej-karpathy-skillshttps://placehold.co/1024x1024?text=Habit%2075%25%20Mechanical%20Keyboard",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://joseperko1982.github.io/andrej-karpathy-skills/products/habit-mechanical-keyboard",
+    "price": "139.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  }
+}

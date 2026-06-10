@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://joseperko1982.github.io/andrej-karpathy-skills/products/drift-merino-hoodie",
+  "name": "Drift Merino Hoodie",
+  "description": "Midweight 100% merino wool hoodie, naturally odor-resistant, made for travel and trail.",
+  "sku": "FW-DMH-M",
+  "gtin13": "0123456789043",
+  "brand": {
+    "@type": "Brand",
+    "name": "Fernweh"
+  },
+  "image": "https://joseperko1982.github.io/andrej-karpathy-skillshttps://placehold.co/1024x1024?text=Drift%20Merino%20Hoodie",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://joseperko1982.github.io/andrej-karpathy-skills/products/drift-merino-hoodie",
+    "price": "159.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  }
+}

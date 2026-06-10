@@ -1,0 +1,18 @@
+# Meta Product Catalogue
+
+> An agent-first product catalogue (static preview). Every product page has a
+> JSON twin and full schema.org Product JSON-LD.
+
+## Products
+
+- [Aurora Smart Desk Lamp](https://joseperko1982.github.io/andrej-karpathy-skills/products/aurora-desk-lamp): Adaptive-color LED desk lamp with circadian presets, USB-C charging, and a matte aluminium body. (JSON: https://joseperko1982.github.io/andrej-karpathy-skills/api/products/aurora-desk-lamp.json)
+- [Trailline 28L Daypack](https://joseperko1982.github.io/andrej-karpathy-skills/products/trailline-pack-28): Weatherproof 28-litre hiking daypack with ventilated back panel and recycled ripstop shell. (JSON: https://joseperko1982.github.io/andrej-karpathy-skills/api/products/trailline-pack-28.json)
+- [Verve Conical Burr Grinder](https://joseperko1982.github.io/andrej-karpathy-skills/products/verve-espresso-grinder): 48mm conical burr espresso grinder with 60 stepless settings and single-dose hopper. (JSON: https://joseperko1982.github.io/andrej-karpathy-skills/api/products/verve-espresso-grinder.json)
+- [Drift Merino Hoodie](https://joseperko1982.github.io/andrej-karpathy-skills/products/drift-merino-hoodie): Midweight 100% merino wool hoodie, naturally odor-resistant, made for travel and trail. (JSON: https://joseperko1982.github.io/andrej-karpathy-skills/api/products/drift-merino-hoodie.json)
+- [Habit 75% Mechanical Keyboard](https://joseperko1982.github.io/andrej-karpathy-skills/products/habit-mechanical-keyboard): Gasket-mounted 75% keyboard with hot-swappable switches, rotary knob, and tri-mode connectivity. (JSON: https://joseperko1982.github.io/andrej-karpathy-skills/api/products/habit-mechanical-keyboard.json)
+- [Solstice Cork Yoga Mat](https://joseperko1982.github.io/andrej-karpathy-skills/products/solstice-yoga-mat): Natural cork yoga mat over a rubber base — grippy when wet, 4.5mm cushioning, plastic-free. (JSON: https://joseperko1982.github.io/andrej-karpathy-skills/api/products/solstice-yoga-mat.json)
+
+## API
+
+- [Full catalog feed](https://joseperko1982.github.io/andrej-karpathy-skills/api/catalog.json): all products as JSON
+- [Agent manifest](https://joseperko1982.github.io/andrej-karpathy-skills/.well-known/agent-catalog.json): capabilities and endpoints

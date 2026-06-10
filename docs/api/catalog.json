@@ -1,0 +1,133 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Meta Product Catalogue",
+  "itemListElement": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://joseperko1982.github.io/andrej-karpathy-skills/products/aurora-desk-lamp",
+      "name": "Aurora Smart Desk Lamp",
+      "description": "Adaptive-color LED desk lamp with circadian presets, USB-C charging, and a matte aluminium body.",
+      "sku": "NB-ADL-001",
+      "gtin13": "0123456789012",
+      "brand": {
+        "@type": "Brand",
+        "name": "Northbeam"
+      },
+      "image": "https://joseperko1982.github.io/andrej-karpathy-skillshttps://placehold.co/1024x1024?text=Aurora%20Smart%20Desk%20Lamp",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://joseperko1982.github.io/andrej-karpathy-skills/products/aurora-desk-lamp",
+        "price": "89.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://joseperko1982.github.io/andrej-karpathy-skills/products/trailline-pack-28",
+      "name": "Trailline 28L Daypack",
+      "description": "Weatherproof 28-litre hiking daypack with ventilated back panel and recycled ripstop shell.",
+      "sku": "FW-TLP-28",
+      "gtin13": "0123456789029",
+      "brand": {
+        "@type": "Brand",
+        "name": "Fernweh"
+      },
+      "image": "https://joseperko1982.github.io/andrej-karpathy-skillshttps://placehold.co/1024x1024?text=Trailline%2028L%20Daypack",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://joseperko1982.github.io/andrej-karpathy-skills/products/trailline-pack-28",
+        "price": "129.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://joseperko1982.github.io/andrej-karpathy-skills/products/verve-espresso-grinder",
+      "name": "Verve Conical Burr Grinder",
+      "description": "48mm conical burr espresso grinder with 60 stepless settings and single-dose hopper.",
+      "sku": "KF-VCG-048",
+      "gtin13": "0123456789036",
+      "brand": {
+        "@type": "Brand",
+        "name": "Kaffeform"
+      },
+      "image": "https://joseperko1982.github.io/andrej-karpathy-skillshttps://placehold.co/1024x1024?text=Verve%20Conical%20Burr%20Grinder",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://joseperko1982.github.io/andrej-karpathy-skills/products/verve-espresso-grinder",
+        "price": "249.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/PreOrder"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://joseperko1982.github.io/andrej-karpathy-skills/products/drift-merino-hoodie",
+      "name": "Drift Merino Hoodie",
+      "description": "Midweight 100% merino wool hoodie, naturally odor-resistant, made for travel and trail.",
+      "sku": "FW-DMH-M",
+      "gtin13": "0123456789043",
+      "brand": {
+        "@type": "Brand",
+        "name": "Fernweh"
+      },
+      "image": "https://joseperko1982.github.io/andrej-karpathy-skillshttps://placehold.co/1024x1024?text=Drift%20Merino%20Hoodie",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://joseperko1982.github.io/andrej-karpathy-skills/products/drift-merino-hoodie",
+        "price": "159.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://joseperko1982.github.io/andrej-karpathy-skills/products/habit-mechanical-keyboard",
+      "name": "Habit 75% Mechanical Keyboard",
+      "description": "Gasket-mounted 75% keyboard with hot-swappable switches, rotary knob, and tri-mode connectivity.",
+      "sku": "NB-HMK-75",
+      "gtin13": "0123456789050",
+      "brand": {
+        "@type": "Brand",
+        "name": "Northbeam"
+      },
+      "image": "https://joseperko1982.github.io/andrej-karpathy-skillshttps://placehold.co/1024x1024?text=Habit%2075%25%20Mechanical%20Keyboard",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://joseperko1982.github.io/andrej-karpathy-skills/products/habit-mechanical-keyboard",
+        "price": "139.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://joseperko1982.github.io/andrej-karpathy-skills/products/solstice-yoga-mat",
+      "name": "Solstice Cork Yoga Mat",
+      "description": "Natural cork yoga mat over a rubber base — grippy when wet, 4.5mm cushioning, plastic-free.",
+      "sku": "TP-SYM-45",
+      "gtin13": "0123456789067",
+      "brand": {
+        "@type": "Brand",
+        "name": "Terra Practice"
+      },
+      "image": "https://joseperko1982.github.io/andrej-karpathy-skillshttps://placehold.co/1024x1024?text=Solstice%20Cork%20Yoga%20Mat",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://joseperko1982.github.io/andrej-karpathy-skills/products/solstice-yoga-mat",
+        "price": "79.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/OutOfStock"
+      }
+    }
+  ]
+}

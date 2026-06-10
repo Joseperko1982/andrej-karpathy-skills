@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://joseperko1982.github.io/andrej-karpathy-skills/products/verve-espresso-grinder",
+  "name": "Verve Conical Burr Grinder",
+  "description": "48mm conical burr espresso grinder with 60 stepless settings and single-dose hopper.",
+  "sku": "KF-VCG-048",
+  "gtin13": "0123456789036",
+  "brand": {
+    "@type": "Brand",
+    "name": "Kaffeform"
+  },
+  "image": "https://joseperko1982.github.io/andrej-karpathy-skillshttps://placehold.co/1024x1024?text=Verve%20Conical%20Burr%20Grinder",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://joseperko1982.github.io/andrej-karpathy-skills/products/verve-espresso-grinder",
+    "price": "249.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/PreOrder"
+  }
+}

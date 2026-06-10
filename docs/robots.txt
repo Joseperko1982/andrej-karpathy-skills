@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joseperko1982.github.io/andrej-karpathy-skills/sitemap.xml
