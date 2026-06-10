@@ -1,0 +1,120 @@
+[
+  {
+    "id": "aurora-desk-lamp",
+    "name": "Aurora Smart Desk Lamp",
+    "brand": "Northbeam",
+    "description": "Adaptive-color LED desk lamp with circadian presets, USB-C charging, and a matte aluminium body.",
+    "price": 89,
+    "currency": "USD",
+    "sku": "NB-ADL-001",
+    "gtin": "0123456789012",
+    "availability": "InStock",
+    "category": "Home & Office > Lighting",
+    "image": "https://placehold.co/1024x1024?text=Aurora%20Smart%20Desk%20Lamp",
+    "video": null,
+    "attributes": {
+      "color": "Graphite",
+      "material": "Aluminium",
+      "wattage": "12W",
+      "connectivity": "USB-C, Bluetooth"
+    }
+  },
+  {
+    "id": "trailline-pack-28",
+    "name": "Trailline 28L Daypack",
+    "brand": "Fernweh",
+    "description": "Weatherproof 28-litre hiking daypack with ventilated back panel and recycled ripstop shell.",
+    "price": 129,
+    "currency": "USD",
+    "sku": "FW-TLP-28",
+    "gtin": "0123456789029",
+    "availability": "InStock",
+    "category": "Outdoor > Backpacks",
+    "image": "https://placehold.co/1024x1024?text=Trailline%2028L%20Daypack",
+    "video": null,
+    "attributes": {
+      "volume": "28L",
+      "weight": "890g",
+      "material": "Recycled ripstop nylon",
+      "color": "Moss"
+    }
+  },
+  {
+    "id": "verve-espresso-grinder",
+    "name": "Verve Conical Burr Grinder",
+    "brand": "Kaffeform",
+    "description": "48mm conical burr espresso grinder with 60 stepless settings and single-dose hopper.",
+    "price": 249,
+    "currency": "USD",
+    "sku": "KF-VCG-048",
+    "gtin": "0123456789036",
+    "availability": "PreOrder",
+    "category": "Kitchen > Coffee",
+    "image": "https://placehold.co/1024x1024?text=Verve%20Conical%20Burr%20Grinder",
+    "video": null,
+    "attributes": {
+      "burrSize": "48mm",
+      "settings": "Stepless",
+      "hopper": "Single dose, 45g",
+      "color": "Cream"
+    }
+  },
+  {
+    "id": "drift-merino-hoodie",
+    "name": "Drift Merino Hoodie",
+    "brand": "Fernweh",
+    "description": "Midweight 100% merino wool hoodie, naturally odor-resistant, made for travel and trail.",
+    "price": 159,
+    "currency": "USD",
+    "sku": "FW-DMH-M",
+    "gtin": "0123456789043",
+    "availability": "InStock",
+    "category": "Apparel > Hoodies",
+    "image": "https://placehold.co/1024x1024?text=Drift%20Merino%20Hoodie",
+    "video": null,
+    "attributes": {
+      "material": "100% merino wool, 250gsm",
+      "fit": "Regular",
+      "color": "Charcoal"
+    }
+  },
+  {
+    "id": "habit-mechanical-keyboard",
+    "name": "Habit 75% Mechanical Keyboard",
+    "brand": "Northbeam",
+    "description": "Gasket-mounted 75% keyboard with hot-swappable switches, rotary knob, and tri-mode connectivity.",
+    "price": 139,
+    "currency": "USD",
+    "sku": "NB-HMK-75",
+    "gtin": "0123456789050",
+    "availability": "InStock",
+    "category": "Electronics > Keyboards",
+    "image": "https://placehold.co/1024x1024?text=Habit%2075%25%20Mechanical%20Keyboard",
+    "video": null,
+    "attributes": {
+      "layout": "75%",
+      "switches": "Hot-swappable, linear",
+      "connectivity": "USB-C, 2.4GHz, Bluetooth",
+      "color": "Slate"
+    }
+  },
+  {
+    "id": "solstice-yoga-mat",
+    "name": "Solstice Cork Yoga Mat",
+    "brand": "Terra Practice",
+    "description": "Natural cork yoga mat over a rubber base — grippy when wet, 4.5mm cushioning, plastic-free.",
+    "price": 79,
+    "currency": "USD",
+    "sku": "TP-SYM-45",
+    "gtin": "0123456789067",
+    "availability": "OutOfStock",
+    "category": "Sports > Yoga",
+    "image": "https://placehold.co/1024x1024?text=Solstice%20Cork%20Yoga%20Mat",
+    "video": null,
+    "attributes": {
+      "thickness": "4.5mm",
+      "material": "Cork + natural rubber",
+      "size": "183 x 66cm"
+    }
+  }
+]
